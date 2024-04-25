@@ -1,4 +1,4 @@
-package policies.addon_version
+package terraform.policies.addon_version
 import input.plan as tfplan
 
 
