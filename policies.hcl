@@ -8,3 +8,8 @@ policy "public_ingress" {
   enforcement_level = "mandatory"
 }
 
+
+policy "check_addon_details" {
+  query = "data.terraform.policies.addon.deny"
+  enforcement_level = "mandatory"
+}
