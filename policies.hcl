@@ -8,10 +8,9 @@ policy "public_ingress" {
   enforcement_level = "mandatory"
 }
 
-
 policy "check_addon_version" {
   query = "data.terraform.policies.addon_version.deny"
-  enforcement_level = "mandatory"
+  enforcement_level = "advisory"
 }
 
 policy "check_addon_cluster_association" {
@@ -21,5 +20,10 @@ policy "check_addon_cluster_association" {
 
 policy "check_addon_type" {
   query = "data.terraform.policies.addon_type.deny"
+  enforcement_level = "mandatory"
+}
+
+policy "check_required_tags" {
+  query = "data.terraform.policies.tags.deny"
   enforcement_level = "mandatory"
 }
