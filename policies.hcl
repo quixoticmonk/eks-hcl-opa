@@ -27,3 +27,8 @@ policy "check_required_tags" {
   query = "data.terraform.policies.tags.deny"
   enforcement_level = "mandatory"
 }
+
+policy "check_log_retention" {
+  query = "data.terraform.policies.log_retention.deny"
+  enforcement_level = "mandatory"
+}
