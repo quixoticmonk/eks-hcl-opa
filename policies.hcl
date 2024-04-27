@@ -32,3 +32,8 @@ policy "check_log_retention" {
   query = "data.terraform.policies.log_retention.deny"
   enforcement_level = "mandatory"
 }
+
+policy "check_allowed_addons" {
+  query = "data.terraform.policies.eks_addons.deny"
+  enforcement_level = "mandatory"
+}
