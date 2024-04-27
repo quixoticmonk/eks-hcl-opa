@@ -1,4 +1,4 @@
-package terraform.policies.tags
+package terraform.policies.log_retention
 import input.plan as tfplan
 
 

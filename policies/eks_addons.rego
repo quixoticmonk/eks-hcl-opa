@@ -1,4 +1,4 @@
-package terraform.policies.addon_version
+package terraform.policies.eks_addons
 import input.plan as tfplan
 
 import future.keywords
